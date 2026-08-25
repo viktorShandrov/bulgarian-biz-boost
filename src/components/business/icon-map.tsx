@@ -32,8 +32,8 @@ export function ServiceIcon({
   name,
   className,
 }: {
-  name?: string;
-  className?: string;
+  name?: string | undefined;
+  className?: string | undefined;
 }) {
   const Icon = (name && icons[name]) || CircleDot;
   return <Icon className={className} aria-hidden="true" />;
