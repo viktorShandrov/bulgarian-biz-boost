@@ -1,7 +1,10 @@
 import { createFileRoute, notFound, Link } from "@tanstack/react-router";
 import { ContactSection } from "@/components/business/ContactSection";
+import { DoctorBio } from "@/components/business/DoctorBio";
+import { FaqSection } from "@/components/business/FaqSection";
 import { Gallery } from "@/components/business/Gallery";
 import { Hero } from "@/components/business/Hero";
+import { ProcessSection } from "@/components/business/ProcessSection";
 import { Reviews } from "@/components/business/Reviews";
 import { Services } from "@/components/business/Services";
 import { StickyContactBar } from "@/components/business/StickyContactBar";
@@ -47,8 +50,11 @@ function BusinessLanding() {
     <main className="pb-20 md:pb-0">
       <Hero business={business} />
       <Services business={business} />
+      <ProcessSection />
+      <DoctorBio business={business} />
       <Reviews business={business} />
       <Gallery business={business} />
+      <FaqSection business={business} />
       <ContactSection business={business} />
       <footer className="border-t border-border bg-card py-8 text-center text-sm text-muted-foreground">
         <p>
