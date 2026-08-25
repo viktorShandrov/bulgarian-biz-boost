@@ -5,11 +5,12 @@ export function Services({ business }: { business: Business }) {
   return (
     <section id="uslugi" className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
       <h2 className="font-display text-2xl font-bold tracking-tight md:text-3xl">
-        {business.type === "medical" ? "Дентални услуги" : "Какво правим"}
+        Дентални услуги
       </h2>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Ясни цени, без скрити условия. Финалната стойност потвърждаваме преди започване.
+        Ясни цени, без скрити условия. Финалният план потвърждаваме след прегледа.
       </p>
+
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {business.services.map((s) => (
