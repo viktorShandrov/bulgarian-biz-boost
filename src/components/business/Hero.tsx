@@ -13,9 +13,9 @@ export function Hero({ business }: { business: Business }) {
           <div>
             <p className="flex items-center gap-1.5 text-sm font-medium text-primary-foreground/80">
               <MapPin className="size-4" />
-              {business.city}
-              {business.type === "medical" ? " · Дентална практика" : " · Ремонти и услуги"}
+              {business.city} · Дентална практика
             </p>
+
             <h1 className="mt-3 font-display text-3xl leading-tight font-extrabold tracking-tight md:text-5xl">
               {business.name}
             </h1>
@@ -51,7 +51,7 @@ export function Hero({ business }: { business: Business }) {
                 href="#zapitvane"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-primary-foreground/30 px-6 py-3.5 text-base font-semibold transition-colors hover:bg-primary-foreground/10"
               >
-                {business.type === "medical" ? "Запази час" : "Вземи оферта"}
+                Запази час
               </a>
             </div>
 

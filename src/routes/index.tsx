@@ -5,21 +5,22 @@ import { businesses } from "@/data/businesses";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Лендинг страници за местни услуги в България" },
+      { title: "Лендинг страници за зъболекари в България" },
       {
         name: "description",
         content:
-          "Готови мобилни лендинг страници за зъболекари, майстори, ВиК и ремонтни екипи — с обаждане с едно докосване.",
+          "Готови мобилни лендинг страници за дентални практики — с обаждане с едно докосване, ясни цени и запазване на час.",
       },
-      { property: "og:title", content: "Лендинг страници за местни услуги в България" },
+      { property: "og:title", content: "Лендинг страници за зъболекари в България" },
       {
         property: "og:description",
-        content: "Мобилни страници за зъболекари и майстори с ясни цени и бърз контакт.",
+        content: "Мобилни страници за дентални практики с ясни цени и бърз контакт.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
+
   component: Index,
 });
 
@@ -29,17 +30,18 @@ function Index() {
       <section className="bg-hero-gradient px-5 py-14 text-primary-foreground md:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">
           <h1 className="font-display text-3xl font-extrabold tracking-tight md:text-5xl">
-            Страници, които превръщат търсенето в обаждане
+            Страници, които превръщат търсенето в записан час
           </h1>
           <p className="mt-4 max-w-2xl text-primary-foreground/85 md:text-lg">
-            Мобилно ориентирани лендинг страници за зъболекари, майстори, ВиК и ремонтни
-            екипи в България. Избери обект, за да видиш страницата.
+            Мобилно ориентирани лендинг страници за дентални практики в България.
+            Избери кабинет, за да видиш страницата.
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-12 md:px-8 md:py-16">
-        <h2 className="font-display text-2xl font-bold tracking-tight">Демо обекти</h2>
+        <h2 className="font-display text-2xl font-bold tracking-tight">Демо кабинети</h2>
+
         <div className="mt-6 grid gap-5 md:grid-cols-2">
           {businesses.map((b) => {
             const avg =
