@@ -357,3 +357,5 @@ export const businesses: Business[] = [
     ]
   }
 ];
+export const getBusiness = (id: string): Business | undefined =>
+  businesses.find((b) => b.id === id);
