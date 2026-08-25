@@ -12,7 +12,7 @@ export function ContactSection({ business }: { business: Business }) {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-2 md:px-8">
         <div>
           <h2 className="font-display text-2xl font-bold tracking-tight md:text-3xl">
-            {business.type === "medical" ? "Запази час" : "Заяви безплатен оглед"}
+            Запази час
           </h2>
           <p className="mt-2 text-muted-foreground">
             Отговаряме в рамките на работния ден. Най-бързо е по телефон или Viber.
@@ -95,18 +95,15 @@ export function ContactSection({ business }: { business: Business }) {
               />
             </label>
             <label className="block text-sm font-medium">
-              {business.type === "medical" ? "Какво ви притеснява?" : "Какво трябва да се направи?"}
+              Какво ви притеснява?
               <textarea
                 name="message"
                 rows={4}
                 className="mt-1.5 w-full rounded-xl border border-input bg-background p-3 text-base outline-none focus:border-brand"
-                placeholder={
-                  business.type === "medical"
-                    ? "Болка в горен ляв зъб от 2 дни..."
-                    : "Ремонт на баня, 5 кв.м, панелен блок..."
-                }
+                placeholder="Болка в горен ляв зъб от 2 дни..."
               />
             </label>
+
             <button
               type="submit"
               className="h-13 w-full rounded-xl bg-accent px-6 py-3.5 text-base font-bold text-accent-foreground shadow-cta transition-transform active:scale-[0.98]"

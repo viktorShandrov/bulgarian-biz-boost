@@ -59,7 +59,7 @@ function BusinessLanding() {
         </p>
         <p className="mt-2">
           <Link to="/" className="underline">
-            Всички обекти
+            Всички кабинети
           </Link>
         </p>
       </footer>
@@ -71,7 +71,7 @@ function BusinessLanding() {
 function BusinessNotFound() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-4 px-5 text-center">
-      <h1 className="font-display text-2xl font-bold">Няма такъв обект</h1>
+      <h1 className="font-display text-2xl font-bold">Няма такъв кабинет</h1>
       <p className="text-muted-foreground">Проверете адреса или разгледайте списъка.</p>
       <Link to="/" className="rounded-xl bg-primary px-5 py-3 font-semibold text-primary-foreground">
         Към списъка

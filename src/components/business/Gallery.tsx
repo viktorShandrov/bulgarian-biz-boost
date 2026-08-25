@@ -5,8 +5,9 @@ export function Gallery({ business }: { business: Business }) {
   return (
     <section className="mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-20">
       <h2 className="font-display text-2xl font-bold tracking-tight md:text-3xl">
-        {business.type === "medical" ? "Нашият кабинет" : "Наши проекти"}
+        Нашият кабинет
       </h2>
+
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {business.galleryUrls.map((url, i) => (
           <img

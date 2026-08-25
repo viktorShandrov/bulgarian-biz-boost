@@ -1,5 +1,6 @@
 import heroDental from "@/assets/hero-dental.jpg";
-import heroRemont from "@/assets/hero-remont.jpg";
+import heroDental2 from "@/assets/hero-dental-2.jpg";
+import dentalGallery from "@/assets/dental-gallery.jpg";
 
 export interface Service {
   title: string;
@@ -16,8 +17,7 @@ export interface Review {
 }
 
 export interface Business {
-  id: string; // URL slug, e.g. "dr-ivanov", "remonti-petrov"
-  type: "medical" | "trade"; // medical = dentist/doctors, trade = handymen/repairs
+  id: string; // URL slug, e.g. "dr-ivanov"
   name: string;
   tagline: string;
   city: string;
@@ -38,7 +38,6 @@ export interface Business {
 export const businesses: Business[] = [
   {
     id: "dr-ivanov",
-    type: "medical",
     name: "Дентална практика д-р Иванов",
     tagline: "Безболезнено лечение и естетика на усмивката в центъра на София",
     city: "София",
@@ -116,63 +115,62 @@ export const businesses: Business[] = [
         date: "май 2026",
       },
     ],
-    galleryUrls: [heroDental, heroRemont],
+    galleryUrls: [heroDental, dentalGallery],
   },
   {
-    id: "remonti-petrov",
-    type: "trade",
-    name: "Ремонти Петров",
-    tagline: "Цялостни ремонти на апартаменти в срок и по договор",
+    id: "dental-smile",
+    name: "Дентален център Smile Пловдив",
+    tagline: "Детска и естетична дентална медицина с грижа за всяко семейство",
     city: "Пловдив",
     phone: "+359877654321",
     viberPhone: "+359877654321",
     whatsappPhone: "+359877654321",
-    email: "office@remontipetrov.bg",
+    email: "office@dentalsmile.bg",
     address: "ул. Капитан Райчо 18, Пловдив",
     workingHours: "Пон – Съб: 08:00 – 19:00",
-    badgeText: "5 години гаранция",
-    heroImageUrl: heroRemont,
+    badgeText: "Безплатна консултация за деца",
+    heroImageUrl: heroDental2,
     features: [
-      "Спазване на срокове",
-      "Писмен договор",
-      "Фиксирана оферта",
-      "Чистене след ремонт",
+      "Детски зъболекар",
+      "Седация при страх",
+      "Дигитален скенер",
+      "Плащане на части",
     ],
     services: [
       {
-        title: "Цялостен ремонт",
+        title: "Детска дентална медицина",
         description:
-          "От къртене до ключ — шпакловка, боя, ел. и ВиК инсталации, подови настилки.",
-        iconName: "Hammer",
-        priceFrom: "180 лв./кв.м",
-      },
-      {
-        title: "Баня до ключ",
-        description: "Хидроизолация, фаянс, санитария и монтаж за 10–14 дни.",
-        iconName: "ShowerHead",
-        priceFrom: "3500 лв.",
-      },
-      {
-        title: "ВиК услуги",
-        description: "Отстраняване на течове, смяна на тръби и смесители.",
-        iconName: "Wrench",
+          "Профилактика, силанти и лечение в спокойна среда без стрес за детето.",
+        iconName: "Smile",
         priceFrom: "60 лв.",
       },
       {
-        title: "Електроинсталации",
-        description: "Нови инсталации, табла, контакти и осветление по норматив.",
-        iconName: "Zap",
-        priceFrom: "50 лв.",
+        title: "Естетични корони",
+        description: "Циркониеви и керамични корони с дигитален отпечатък.",
+        iconName: "Sparkles",
+        priceFrom: "650 лв.",
       },
       {
-        title: "Шпакловка и боя",
-        description: "Машинна шпакловка, гипсокартон и латекс без прах и петна.",
-        iconName: "PaintRoller",
-        priceFrom: "14 лв./кв.м",
+        title: "Лечение на кариес",
+        description: "Съвременни обтурации с гаранция и безболезнена анестезия.",
+        iconName: "ShieldCheck",
+        priceFrom: "90 лв.",
       },
       {
-        title: "Спешен майстор",
-        description: "Авариен екип в рамките на деня за Пловдив и региона.",
+        title: "Кореново лечение",
+        description: "Ендодонтия с машинна обработка и рентгенов контрол.",
+        iconName: "Activity",
+        priceFrom: "180 лв.",
+      },
+      {
+        title: "Алайнери",
+        description: "Прозрачно изправяне на зъбите с 3D план на резултата.",
+        iconName: "AlignCenter",
+        priceFrom: "2200 лв.",
+      },
+      {
+        title: "Спешен приём",
+        description: "Остра болка или счупен зъб — приемаме в рамките на деня.",
         iconName: "Siren",
       },
     ],
@@ -180,23 +178,23 @@ export const businesses: Business[] = [
       {
         author: "Иван К.",
         rating: 5,
-        text: "Ремонтираха тристаен за 6 седмици, точно както обещаха. Без изненади в сметката.",
+        text: "Детето влиза при доктора с усмивка. Обясняват всичко търпеливо.",
         date: "август 2026",
       },
       {
         author: "Даниела М.",
         rating: 5,
-        text: "Банята стана перфектна. Оставиха жилището чисто, което е рядкост.",
+        text: "Направиха ми корони за две седмици — изглеждат напълно естествено.",
         date: "юли 2026",
       },
       {
         author: "Георги В.",
         rating: 4,
-        text: "Коректни хора с договор и гаранция. Забавиха се 3 дни заради доставка.",
+        text: "Коректни цени и точни часове. Само паркирането в центъра е трудно.",
         date: "април 2026",
       },
     ],
-    galleryUrls: [heroRemont, heroDental],
+    galleryUrls: [heroDental2, dentalGallery],
   },
 ];
 
